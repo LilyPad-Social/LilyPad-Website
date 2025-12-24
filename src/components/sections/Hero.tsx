@@ -1,6 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import Image from "next/image";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 const Hero = () => {
 	const container: any = {
 		hidden: {},
@@ -26,8 +26,10 @@ const Hero = () => {
 
 	return (
 		<div className="relative overflow-hidden">
-			<div className="bg-cover bg-[url('/hero.png')] w-full bg-top">
-				<div className="pt-30 lg:pt-40 bg-[rgba(29,30,31,0.7)]">
+			{/* hero background image */}
+			<div className="bg-cover bg-[url('/hero.webp')] w-full bg-top">
+				{/* content container */}
+				<div className=" pt-20 lg:pt-30 bg-[rgba(29,30,31,0.7)]">
 					<div className="h-full w-full flex flex-col justify-center items-center">
 						<motion.div
 							className="max-w-3xl mx-auto mb-20 lg:mb-40 px-3 sm:px-6 lg:px-10 2xl:px-0"
@@ -48,7 +50,7 @@ const Hero = () => {
 								</motion.p>
 							</motion.div>
 							<motion.div
-								className="flex flex-col sm:flex-row gap-3 mx-auto w-fit mt-10 sm:mt-14"
+								className="flex flex-col sm:flex-row gap-3 mx-auto max-w-[260px] sm:max-w-lg mt-10 sm:mt-14 items-center justify-center"
 								variants={item}
 							>
 								{[
@@ -57,7 +59,7 @@ const Hero = () => {
 								]?.map((m: any, index: number) => (
 									<motion.div
 										key={index}
-										className="bg-white rounded-full px-6 py-4 flex items-center w-fit gap-3"
+										className="bg-white rounded-full px-5 py-4 flex items-center w-full gap-3 cursor-pointer justify-center"
 									>
 										<div className="w-[23px] h-[22px] relative">
 											<Image src={m?.icon} fill alt="" className="object-contain" />

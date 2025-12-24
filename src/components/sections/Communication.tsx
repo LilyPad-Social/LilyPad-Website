@@ -6,21 +6,7 @@ import { Play } from "lucide-react";
 
 const Communication = () => {
 	const [isPlaying, setPlaying] = useState(false);
-	const videoRef: any = useRef(null);
 
-	const togglePlay = () => {
-		if (!videoRef) {
-			return;
-		}
-
-		if (videoRef.current.paused) {
-			videoRef.current.play();
-			setPlaying(true);
-		} else {
-			videoRef.current.pause();
-			setPlaying(false);
-		}
-	};
 	return (
 		<div className="bg-brandGray py-20">
 			<div className="max-w-[1400px] w-full mx-auto overflow-hidden px-3 sm:px-6 lg:px-10 xl:px-0">
@@ -37,7 +23,7 @@ const Communication = () => {
 					</p>
 				</div>
 
-				<div className="flex items-center flex-col-reverse sm:flex-wrap justify-center gap-4 mx-auto w-fit mt-7 ">
+				<div className="flex items-center flex-col-reverse sm:flex-wrap sm:flex-row justify-center gap-4 mx-auto w-fit mt-7 ">
 					{[
 						{ name: "Audio Conversation", icon: Mic },
 						{ name: "Video Conversation", icon: Video },
@@ -57,24 +43,17 @@ const Communication = () => {
 				</div>
 
 				<div className="relative max-w-[800px] h-[300px] sm:h-[400px] lg:h-[500px] w-full mx-auto mt-14 sm:mt-20 overflow-hidden rounded-2xl relative">
-					<video
-						src="/video.mp4"
-						controls={isPlaying}
+					<iframe
+						width="100%"
+						height="100%"
+						src="https://www.youtube.com/embed/wDchsz8nmbo?si=FKrVHkIcSXi2uHRJ"
+						title="YouTube video player"
+						frameBorder="0"
+						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+						referrerPolicy="strict-origin-when-cross-origin"
+						allowFullScreen
 						className="w-full h-full object-cover"
-						ref={videoRef}
-						onPlay={() => setPlaying(true)}
-						onPause={() => setPlaying(false)}
 					/>
-					{!isPlaying && (
-						<div className="absolute inset-0 w-full h-full flex flex-col justify-center items-center">
-							<div
-								className="h-14 sm:w-16 w-14 sm:h-16 rounded-full bg-brandGreen p-2 flex flex-col justify-center items-center cursor-pointer"
-								onClick={togglePlay}
-							>
-								<Play className="text-white size-6 sm:size-8" />
-							</div>
-						</div>
-					)}
 				</div>
 			</div>
 		</div>

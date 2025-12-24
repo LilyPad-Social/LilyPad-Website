@@ -17,7 +17,7 @@ const Interest = () => {
 						Want to talk about something specific? With LilyPad, you can filter by interest, making it
 						easier to meet people who share your passions and have something to say.{" "}
 					</p>
-					<div className="flex items-center flex-col-reverse sm:flex-wrap justify-center gap-4 mx-auto w-fit mt-7 ">
+					<div className="flex items-center flex-col-reverse sm:flex-wrap sm:flex-row justify-center gap-4  mx-auto w-fit mt-7 ">
 						{[
 							{ name: "Audio Conversation", icon: Mic },
 							{ name: "Video Conversation", icon: Video },

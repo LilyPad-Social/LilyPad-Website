@@ -87,7 +87,7 @@ const Footer = () => {
 											href={m?.link ?? "#"}
 											key={index}
 											className={`${m?.link ? "cursor-pointer" : "cursor-auto"} hover:${
-												m.link ? "text-brandOrange" : "text-white"
+												m.link ? "text-brandGreen" : "text-white"
 											} transition-all ease-in-out duration-300`}
 										>
 											<p className="max-w-xs -tracking-[0.2px]">{m?.name}</p>
@@ -135,7 +135,7 @@ const Footer = () => {
 							{ name: "Brand Guide", link: "" },
 						]?.map((n: any, index: number, arr: any) => (
 							<Link href={n?.link} key={index} className="flex items-center">
-								<p className="text-white text-sm font-light hover:text-brandOrange ease-in-out transition-all duration-300 -tracking-[0.5px]">
+								<p className="text-white text-sm font-light hover:text-brandGreen ease-in-out transition-all duration-300 -tracking-[0.5px]">
 									{n?.name}
 								</p>
 								{arr?.length - 1 !== index && <Dot className="text-white size-5 mx-1" />}
@@ -143,8 +143,14 @@ const Footer = () => {
 						))}
 					</div>
 				</div>
-				<div className="relative w-full h-20 sm:h-35 lg:h-40 xl:h-60 mt-20">
-					<Image src="/footer logo.svg" fill alt="" className="object-contain xl:object-contain" />
+				<div className="w-full mt-20">
+					<Image
+						src="/footer logo.svg"
+						width={1200} // your image's natural width
+						height={100} // your image's natural height
+						alt="Footer Logo"
+						className="w-full h-auto"
+					/>
 				</div>
 			</div>
 		</div>

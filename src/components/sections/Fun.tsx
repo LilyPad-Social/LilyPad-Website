@@ -2,8 +2,9 @@
 import Image from "next/image";
 const Fun = () => {
 	return (
-		<div className="min-h-[100vh] bg-[url('/fun.jpg')] w-full bg-top sm:bg-center bg-cover">
-			<div className="max-w-[1400px] w-full mx-auto overflow-hidden px-3 sm:px-6 lg:px-10 xl:px-0 py-20 ">
+		<div className="min-h-[100vh] w-full relative">
+			<Image src="/fun.jpg" fill alt="" className="object-cover" />
+			<div className="max-w-[1400px] w-full mx-auto overflow-hidden px-3 sm:px-6 lg:px-10 xl:px-0 py-20 absolute inset-0 h-full">
 				<p className="text-white text-center font-semibold -tracking-[0.5px] text-[20px] mx-auto">
 					Join the Fun{" "}
 				</p>
@@ -19,7 +20,10 @@ const Fun = () => {
 						{ name: "Download for iPhone", icon: "/appstore.png" },
 						{ name: "Download for Android", icon: "/play.svg" },
 					]?.map((m: any, index: number) => (
-						<div key={index} className="bg-white rounded-full px-6 py-4 flex items-center w-fit gap-3">
+						<div
+							key={index}
+							className="bg-white rounded-full px-6 py-4 flex items-center w-full gap-3 cursor-pointer"
+						>
 							<div className="w-[23px] h-[22px] relative">
 								<Image src={m?.icon} fill alt="" className="object-contain" />
 							</div>
