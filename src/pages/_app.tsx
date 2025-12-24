@@ -5,9 +5,9 @@ export default function App({ Component, pageProps }: AppProps) {
 	return (
 		<>
 			<Head>
-				<title>Lilypad - Voice & Video Chat App</title>
+				<title>LilyPad - Voice & Video Chat App</title>
 			</Head>
-			<Component {...pageProps} />;
+			<Component {...pageProps} />
 		</>
 	);
 }
