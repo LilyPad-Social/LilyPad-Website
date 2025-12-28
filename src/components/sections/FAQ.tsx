@@ -7,7 +7,7 @@ import {
 } from "@/components/ui/accordion";
 
 const FAQ = () => {
-	const faqs = [
+	const faqs: { name: string; note: string }[] = [
 		{
 			name: "Is my identity really anonymous on LilyPad?",
 			note:
