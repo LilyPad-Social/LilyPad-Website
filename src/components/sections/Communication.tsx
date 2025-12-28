@@ -1,11 +1,11 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import React, { useState } from "react";
+import React from "react";
 import { MessageCircle, Mic, Video } from "lucide-react";
-import { useRef } from "react";
-import { Play } from "lucide-react";
+// import { useRef } from "react";
+// import { Play } from "lucide-react";
 
 const Communication = () => {
-	const [isPlaying, setPlaying] = useState(false);
+	// const [isPlaying, setPlaying] = useState(false);
 
 	return (
 		<div className="bg-brandGray py-20">
