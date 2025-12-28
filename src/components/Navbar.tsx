@@ -2,18 +2,18 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
-import {
-	Select,
-	SelectContent,
-	SelectGroup,
-	SelectItem,
-	SelectTrigger,
-} from "@/components/ui/select";
-import { Globe } from "lucide-react";
+// import {
+// 	Select,
+// 	SelectContent,
+// 	SelectGroup,
+// 	SelectItem,
+// 	SelectTrigger,
+// } from "@/components/ui/select";
+// import { Globe } from "lucide-react";
 import { TbMenu, TbX } from "react-icons/tb";
 import { motion, AnimatePresence, easeInOut } from "framer-motion";
 const Navbar = () => {
-	const [activeLang, setActiveLang] = useState("English");
+	// const [activeLang, setActiveLang] = useState("English");
 	const [menuOpen, setMenuOpen] = useState(false);
 
 	return (
@@ -33,7 +33,7 @@ const Navbar = () => {
 						<div className="bg-[#111111] p-4 max-w-md ml-auto min-h-screen">
 							<div className="flex flex-row-reverse justify-between items-center w-full">
 								<TbX className="text-white text-3xl" onClick={() => setMenuOpen(!menuOpen)} />
-								<Select onValueChange={(value: any) => setActiveLang(value)} value={activeLang}>
+								{/* <Select onValueChange={(value: any) => setActiveLang(value)} value={activeLang}>
 									<SelectTrigger className="w-fit bg-brandGray rounded-full px-3 py-[22px] focus-visible:ring-0 border-0 border-transparent cursor-pointer">
 										<div className="flex items-center gap-[10px]">
 											<Globe className="text-white size-4" />
@@ -58,7 +58,7 @@ const Navbar = () => {
 											)}
 										</SelectGroup>
 									</SelectContent>
-								</Select>
+								</Select> */}
 							</div>
 							<div className="flex flex-col gap-8 mt-12">
 								{[
@@ -115,7 +115,7 @@ const Navbar = () => {
 					</div>
 
 					<div className="lg:flex items-stretch gap-4 hidden">
-						<Select onValueChange={(value: any) => setActiveLang(value)} value={activeLang}>
+						{/* <Select onValueChange={(value: any) => setActiveLang(value)} value={activeLang}>
 							<SelectTrigger className="w-fit bg-[#4D4B4A] rounded-full px-3 py-[22px] focus-visible:ring-0 border-0 border-transparent cursor-pointer">
 								<div className="flex items-center gap-[10px]">
 									<Globe className="text-white size-4" />
@@ -140,9 +140,9 @@ const Navbar = () => {
 									)}
 								</SelectGroup>
 							</SelectContent>
-						</Select>
+						</Select> */}
 
-						<div className="flex items-center gap-[13px] bg-white rounded-full overflow-hidden h-auto px-5 cursor-pointer">
+						<div className="flex items-center gap-[13px] bg-white rounded-full overflow-hidden h-auto px-5 cursor-pointer py-3">
 							<div className="relative w-[20px] h-[20px]">
 								<Image src="/appstore.png" fill alt="" style={{ objectFit: "contain" }} />
 							</div>
@@ -157,29 +157,8 @@ const Navbar = () => {
 						className="bg-[rgba(255,255,255,0.2)] py-2 sm:py-[10px] px-3 sm:px-4 rounded-full flex gap-2 items-center lg:hidden "
 						onClick={() => setMenuOpen(!menuOpen)}
 					>
-						<AnimatePresence mode="wait">
-							{!menuOpen ? (
-								<motion.div
-									initial={{ opacity: 0 }}
-									animate={{ opacity: 1 }}
-									exit={{ opacity: 0 }}
-									transition={{ ease: easeInOut, duration: 0.1 }}
-									key="open"
-								>
-									<TbMenu className="text-white text-2xl" />
-								</motion.div>
-							) : (
-								<motion.div
-									initial={{ opacity: 0 }}
-									animate={{ opacity: 1 }}
-									exit={{ opacity: 0 }}
-									transition={{ ease: easeInOut, duration: 0.1 }}
-									key="close"
-								>
-									<TbX className="text-white text-2xl" />
-								</motion.div>
-							)}
-						</AnimatePresence>
+						<TbMenu className="text-white text-2xl" />
+
 						<p className="text-white text-base sm:text-lg">MENU</p>
 					</div>
 				</div>
