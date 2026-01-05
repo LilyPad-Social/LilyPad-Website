@@ -9,7 +9,7 @@ const Fun = () => {
 					Join the Fun{" "}
 				</p>
 				<p className="font-bold text-4xl sm:text-5xl lg:text-6xl text-center mx-auto w-fit max-w-4xl lg:leading-15 -tracking-[2px] mt-2">
-					Hop into one LilyPad at a time, Find your people in the crowd{" "}
+					Hop into one LilyPad at a time and have lots of Fun{" "}
 				</p>
 
 				<div className="relative w-[200px] h-[200px] mx-auto mt-14 hidden sm:flex">
