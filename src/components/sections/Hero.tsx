@@ -42,11 +42,12 @@ const Hero = () => {
 								className="text-white text-base sm:text-[22px] w-fit mx-auto text-center font-semibold -tracking-[0.5px]"
 								variants={item}
 							>
-								Your Safe Welcoming Space
+								Your Safe Welcoming Space{" "}
 							</motion.p>
-							<motion.div className="mt-2 sm:mt-4 lg:mt-[22px]" variants={item}>
+							<motion.div className="mt-2 sm:mt-4 lg:mt-[16px]" variants={item}>
 								<motion.p className="font-bold text-4xl sm:text-5xl lg:text-6xl text-center mx-auto w-fit text-transparent bg-clip-text bg-linear-to-br from-[#6DAF20] to-[#B1E574] -tracking-[1.5px]">
-									Make new friends, discover your tribe and find your someone in the crowd
+									Make new friends
+									<br /> and find your someone in the crowd
 								</motion.p>
 							</motion.div>
 							<motion.div

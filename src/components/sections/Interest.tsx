@@ -64,7 +64,7 @@ const Interest = () => {
 						<div className="tags-sm rotate-6 lg:ml-70 hidden lg:flex flex-col justify-center items-center ">
 							Songs that take you back
 						</div>
-						<div className="tags-xs mt-10 sm:tags-sm rotate-6 sm:rotate-14 md:rotate-20 lg:rotate-16 ml-auto mr-10 sm:mr-30 lg:-mr-10 lg:-mt-5 flex flex-col justify-center items-center">
+						<div className="tags-big mt-10 rotate-6 sm:rotate-14 md:rotate-20 lg:rotate-16 ml-auto mr-10 sm:mr-30 lg:-mr-10 lg:-mt-5 flex flex-col justify-center items-center">
 							Music tastes
 						</div>
 						<div className="tags-big mb-5 -mt-6 md:mt-8 -ml-8 sm:-ml-5 lg:ml-6 flex flex-col justify-center items-center">
