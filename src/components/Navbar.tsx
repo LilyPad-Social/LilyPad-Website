@@ -101,8 +101,8 @@ const Navbar = () => {
 
 						<div className="lg:flex items-center gap-8 hidden">
 							{[
-								{ name: "Blog", link: "/" },
-								{ name: "Event", link: "/" },
+								{ name: "LilyPad Commons", link: "/" },
+								// { name: "Event", link: "/" },
 								{ name: "Community Guidelines", link: "/" },
 							]?.map((n: any, index: number) => (
 								<Link href={n?.link} key={index}>
