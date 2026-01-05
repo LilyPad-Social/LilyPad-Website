@@ -5,43 +5,52 @@ import {
 	AccordionItem,
 	AccordionTrigger,
 } from "@/components/ui/accordion";
+import Link from "next/link";
+import { ReactElement } from "react";
 
 const FAQ = () => {
-	const faqs: { name: string; note: string }[] = [
+	const faqs: { name: string; note: string | ReactElement }[] = [
 		{
 			name: "Is my identity really anonymous on LilyPad?",
 			note:
-				"Lorem ipsum dolor sit amet consectetur. Et hac velit viverra gravida in curabitur odio nulla ornare. Blandit massa at ut facilisi aenean nam. Phasellus cras vulputate arcu convallis scelerisque sed iaculis etiam. Ultricies facilisi vulputate enim urna nunc semper tincidunt suspendisse in. Dictumst mattis porttitor dui semper tempus lorem.Est luctus odio commodo sed sit. Varius in sit nisi nec ac mattis. Euismod turpis vitae venenatis purus bibendum lectus aenean eget vivamus. Nunc eu facilisis gravida scelerisque ultrices ut velit cursus amet. Donec lectus urna dignissim fermentum habitant massa cras malesuada. Nisi nibh montes sit ullamcorper et. Sit lacinia orci vitae viverra sagittis mattis dui cras non. Id nascetur ullamcorper at gravida massa amet lectus. Commodo risus sollicitudin velit erat. Suspendisse at ultricies in nec quis tristique. Facilisis amet egestas dolor maecenas. Nibh ac quam iaculis purus hac odio orci. ",
+				"Yes. LilyPad is built for anonymity. You don’t share your real name, phone number, or personal identifiers with other users. Conversations happen without revealing who you are.",
 		},
 		{
 			name: "Are my conversations secure on LilyPad",
 			note:
-				"Lorem ipsum dolor sit amet consectetur. Et hac velit viverra gravida in curabitur odio nulla ornare. Blandit massa at ut facilisi aenean nam. Phasellus cras vulputate arcu convallis scelerisque sed iaculis etiam. Ultricies facilisi vulputate enim urna nunc semper tincidunt suspendisse in. Dictumst mattis porttitor dui semper tempus lorem.Est luctus odio commodo sed sit. Varius in sit nisi nec ac mattis. Euismod turpis vitae venenatis purus bibendum lectus aenean eget vivamus. Nunc eu facilisis gravida scelerisque ultrices ut velit cursus amet. Donec lectus urna dignissim fermentum habitant massa cras malesuada. Nisi nibh montes sit ullamcorper et. Sit lacinia orci vitae viverra sagittis mattis dui cras non. Id nascetur ullamcorper at gravida massa amet lectus. Commodo risus sollicitudin velit erat. Suspendisse at ultricies in nec quis tristique. Facilisis amet egestas dolor maecenas. Nibh ac quam iaculis purus hac odio orci. ",
+				"Yes. LilyPad uses secure communication protocols to protect conversations in transit. While no platform can guarantee absolute security, we prioritize privacy and data protection by design.",
 		},
 		{
 			name: "Can I report inappropriate behavior?",
 			note:
-				"Lorem ipsum dolor sit amet consectetur. Et hac velit viverra gravida in curabitur odio nulla ornare. Blandit massa at ut facilisi aenean nam. Phasellus cras vulputate arcu convallis scelerisque sed iaculis etiam. Ultricies facilisi vulputate enim urna nunc semper tincidunt suspendisse in. Dictumst mattis porttitor dui semper tempus lorem.Est luctus odio commodo sed sit. Varius in sit nisi nec ac mattis. Euismod turpis vitae venenatis purus bibendum lectus aenean eget vivamus. Nunc eu facilisis gravida scelerisque ultrices ut velit cursus amet. Donec lectus urna dignissim fermentum habitant massa cras malesuada. Nisi nibh montes sit ullamcorper et. Sit lacinia orci vitae viverra sagittis mattis dui cras non. Id nascetur ullamcorper at gravida massa amet lectus. Commodo risus sollicitudin velit erat. Suspendisse at ultricies in nec quis tristique. Facilisis amet egestas dolor maecenas. Nibh ac quam iaculis purus hac odio orci. ",
+				"Absolutely. If you encounter harassment, abuse, or any behavior that violates our community guidelines, you can report the user directly from the conversation. Reports are reviewed promptly to keep LilyPad safe for everyone.",
 		},
 		{
 			name: "How are matches made?",
 			note:
-				"Lorem ipsum dolor sit amet consectetur. Et hac velit viverra gravida in curabitur odio nulla ornare. Blandit massa at ut facilisi aenean nam. Phasellus cras vulputate arcu convallis scelerisque sed iaculis etiam. Ultricies facilisi vulputate enim urna nunc semper tincidunt suspendisse in. Dictumst mattis porttitor dui semper tempus lorem.Est luctus odio commodo sed sit. Varius in sit nisi nec ac mattis. Euismod turpis vitae venenatis purus bibendum lectus aenean eget vivamus. Nunc eu facilisis gravida scelerisque ultrices ut velit cursus amet. Donec lectus urna dignissim fermentum habitant massa cras malesuada. Nisi nibh montes sit ullamcorper et. Sit lacinia orci vitae viverra sagittis mattis dui cras non. Id nascetur ullamcorper at gravida massa amet lectus. Commodo risus sollicitudin velit erat. Suspendisse at ultricies in nec quis tristique. Facilisis amet egestas dolor maecenas. Nibh ac quam iaculis purus hac odio orci. ",
+				"Matches are made randomly and contextually, depending on availability and selected conversation modes. The goal is to help you connect with new people organically—without profiles, pressure, or expectations.",
 		},
 		{
 			name: "Do I need to create an account to use LilyPad?",
-			note:
-				"Lorem ipsum dolor sit amet consectetur. Et hac velit viverra gravida in curabitur odio nulla ornare. Blandit massa at ut facilisi aenean nam. Phasellus cras vulputate arcu convallis scelerisque sed iaculis etiam. Ultricies facilisi vulputate enim urna nunc semper tincidunt suspendisse in. Dictumst mattis porttitor dui semper tempus lorem.Est luctus odio commodo sed sit. Varius in sit nisi nec ac mattis. Euismod turpis vitae venenatis purus bibendum lectus aenean eget vivamus. Nunc eu facilisis gravida scelerisque ultrices ut velit cursus amet. Donec lectus urna dignissim fermentum habitant massa cras malesuada. Nisi nibh montes sit ullamcorper et. Sit lacinia orci vitae viverra sagittis mattis dui cras non. Id nascetur ullamcorper at gravida massa amet lectus. Commodo risus sollicitudin velit erat. Suspendisse at ultricies in nec quis tristique. Facilisis amet egestas dolor maecenas. Nibh ac quam iaculis purus hac odio orci. ",
+			note: (
+				<p>
+					Yes, you will need to.{" "}
+					<span className="text-brandGreen">
+						<Link href="/">Download</Link>
+					</span>{" "}
+					the app to get started.
+				</p>
+			),
 		},
 		{
 			name: "Is there an age restriction for using LilyPad?",
 			note:
-				"Lorem ipsum dolor sit amet consectetur. Et hac velit viverra gravida in curabitur odio nulla ornare. Blandit massa at ut facilisi aenean nam. Phasellus cras vulputate arcu convallis scelerisque sed iaculis etiam. Ultricies facilisi vulputate enim urna nunc semper tincidunt suspendisse in. Dictumst mattis porttitor dui semper tempus lorem.Est luctus odio commodo sed sit. Varius in sit nisi nec ac mattis. Euismod turpis vitae venenatis purus bibendum lectus aenean eget vivamus. Nunc eu facilisis gravida scelerisque ultrices ut velit cursus amet. Donec lectus urna dignissim fermentum habitant massa cras malesuada. Nisi nibh montes sit ullamcorper et. Sit lacinia orci vitae viverra sagittis mattis dui cras non. Id nascetur ullamcorper at gravida massa amet lectus. Commodo risus sollicitudin velit erat. Suspendisse at ultricies in nec quis tristique. Facilisis amet egestas dolor maecenas. Nibh ac quam iaculis purus hac odio orci. ",
+				"Yes. LilyPad is intended for users 16 years and older. This helps ensure mature, respectful conversations across the platform.",
 		},
 		{
 			name: "Is LilyPad Free to Use?",
 			note:
-				"Lorem ipsum dolor sit amet consectetur. Et hac velit viverra gravida in curabitur odio nulla ornare. Blandit massa at ut facilisi aenean nam. Phasellus cras vulputate arcu convallis scelerisque sed iaculis etiam. Ultricies facilisi vulputate enim urna nunc semper tincidunt suspendisse in. Dictumst mattis porttitor dui semper tempus lorem.Est luctus odio commodo sed sit. Varius in sit nisi nec ac mattis. Euismod turpis vitae venenatis purus bibendum lectus aenean eget vivamus. Nunc eu facilisis gravida scelerisque ultrices ut velit cursus amet. Donec lectus urna dignissim fermentum habitant massa cras malesuada. Nisi nibh montes sit ullamcorper et. Sit lacinia orci vitae viverra sagittis mattis dui cras non. Id nascetur ullamcorper at gravida massa amet lectus. Commodo risus sollicitudin velit erat. Suspendisse at ultricies in nec quis tristique. Facilisis amet egestas dolor maecenas. Nibh ac quam iaculis purus hac odio orci. ",
+				"Yes. LilyPad is free to use. Some features may be enhanced or expanded in the future, but the core experience remains accessible.",
 		},
 	];
 	return (
@@ -55,9 +64,9 @@ const FAQ = () => {
 						Likely Questions You May Have{" "}
 					</p>
 					<p className="text-white text-center font-medium mx-auto -tracking-[0.5px] text-[18px] max-w-3xl mt-1">
-						LilyPad prioritizes your security and peace of mind. Every conversation is protected with
-						end-to-end encryption, and we provide tools to ensure a safe and respectful experience every
-						time you connect.
+						We have answers to some questions you may have.
+						<br className="hidden sm:block" /> Didn&apos;t find what you’re looking for? Send us a mail at{" "}
+						<span className="text-brandGreen">lilypad@benagos.com</span>
 					</p>
 				</div>
 				{/* faqs */}
@@ -68,7 +77,7 @@ const FAQ = () => {
 								{n?.name}
 							</AccordionTrigger>
 							<AccordionContent className="!font-light">
-								<p className="font-light text-sm opacity-50">{n?.note}</p>
+								<p className="font-light text-sm text-[#6E6D7A]">{n?.note}</p>
 							</AccordionContent>
 						</AccordionItem>
 					))}
