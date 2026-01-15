@@ -34,14 +34,16 @@ const Footer = () => {
 								items: [
 									{
 										name: "LilyPad Commons",
-										link: "/",
+										link:
+											"https://benagos.notion.site/LilyPad-Commons-1bf3c9f91dc78036a643f9967832f96f?source=copy_link",
 									},
 									{
 										name: "Community Guidelines",
-										link: "/",
+										link:
+											"https://benagos.notion.site/LilyPad-Community-Guidelines-TOS-1bf3c9f91dc7818b8d06c3a0ef906384?source=copy_link",
 									},
 									{
-										name: "Terms of Service",
+										name: "Email Us",
 										link: "/",
 									},
 								],
@@ -50,20 +52,20 @@ const Footer = () => {
 								name: "Social",
 								items: [
 									{
-										name: "TikTok",
-										link: "/",
+										name: "Linkedin",
+										link: "https://linkedin.com/company/benagos",
 									},
 									{
 										name: "Instagram",
-										link: "/",
+										link: "https://instagram.com/benagoshq",
 									},
 									{
 										name: "X(Twitter)",
-										link: "/",
+										link: " https://x.com/benagoshq",
 									},
 									{
-										name: "Linkedin",
-										link: "/",
+										name: "TikTok",
+										link: "https://www.tiktok.com/@benagoshq",
 									},
 								],
 							},
@@ -71,10 +73,11 @@ const Footer = () => {
 								name: "Contact",
 								items: [
 									{
-										name: "Benagos LLC, Benagos Technologies Limited Lekki, Lagos, Nigeria",
+										name: "Benagos Technologies Limited Lagos, Nigeria",
 									},
 									{
 										name: "lilypad@benagos.com",
+										link: "mailto:lilypad@benagos.com",
 									},
 								],
 							},
@@ -85,6 +88,7 @@ const Footer = () => {
 									{f?.items?.map((m: any, index: number) => (
 										<Link
 											href={m?.link ?? "#"}
+											target="_blank"
 											key={index}
 											className={`${m?.link ? "cursor-pointer" : "cursor-auto"} hover:${
 												m.link ? "text-brandGreen" : "text-white"
@@ -115,13 +119,12 @@ const Footer = () => {
 					spontaneous chats with people from all walks of life. Anonymity, real-time engagement, and
 					endless possibilities await. Dive in and discover who’s out there, one chat at a time.
 					Unauthorized reproduction or redistribution of copyrighted materials on this website and
-					Kusala&apos;s digital media pages is strictly prohibited. Additional disclosures can be found
+					LilyPad&apos;s digital media pages is strictly prohibited. Additional disclosures can be found
 					in the resources section of our website.
 					<br /> <br />
-					From a single heart, we build for the curious, the creative, and the future. Benagos is a
-					product studio on a mission to build human-first digital tools — for connection, creativity,
-					clarity, and change. Each of our products is a petal, blooming from one vision: to make the
-					internet more thoughtful.
+					LilyPad is part of the Benagos family apps. Benagos is a product studio on a mission to build
+					human-first digital tools — for connection, creativity, clarity, and change. Each of our
+					products is a petal, blooming from one vision: to make the internet more thoughtful.
 				</p>
 				<div className="my-10 justify-between w-full flex flex-col md:flex-row md:items-center gap-5">
 					<p className="text-white font-light text-sm -tracking-[0.5px]">
@@ -129,12 +132,28 @@ const Footer = () => {
 					</p>
 					<div className="flex flex-wrap items-center">
 						{[
-							{ name: "Report User", link: "" },
-							{ name: "Privacy and Terms", link: "" },
-							{ name: "Contact LilyPad", link: "" },
-							{ name: "Brand Guide", link: "" },
+							{
+								name: "Report User",
+								link:
+									"https://benagos.notion.site/LilyPad-Support-Channels-1bf3c9f91dc78143bc29c7953f2d6535?source=copy_link",
+							},
+							{
+								name: "Privacy and Terms",
+								link:
+									"https://benagos.notion.site/LilyPad-Privacy-1bf3c9f91dc78151981cc9fa97db4c2c?source=copy_link",
+							},
+							{
+								name: "Contact LilyPad",
+								link:
+									"https://benagos.notion.site/LilyPad-Cookie-policy-2e73c9f91dc7806cb709c78d0f487882?source=copy_link",
+							},
+							{
+								name: "Brand Guide",
+								link:
+									"https://benagos.notion.site/LilyPad-Brand-Guide-2e73c9f91dc78030810affbaad298bff?source=copy_link",
+							},
 						]?.map((n: any, index: number, arr: any) => (
-							<Link href={n?.link} key={index} className="flex items-center">
+							<Link href={n?.link} key={index} className="flex items-center" target="_blank">
 								<p className="text-white text-sm font-light hover:text-brandGreen ease-in-out transition-all duration-300 -tracking-[0.5px]">
 									{n?.name}
 								</p>

@@ -21,7 +21,7 @@ const Privacy = () => {
 					</p>
 				</div>
 
-				<div className="flex items-center flex-col-reverse sm:flex-wrap sm:flex-row justify-center gap-4  mx-auto w-fit mt-7 ">
+				{/* <div className="flex items-center flex-col-reverse sm:flex-wrap sm:flex-row justify-center gap-4  mx-auto w-fit mt-7 ">
 					{[
 						{ name: "Audio Conversation", icon: Mic },
 						{ name: "Video Conversation", icon: Video },
@@ -38,7 +38,7 @@ const Privacy = () => {
 							</div>
 						);
 					})}
-				</div>
+				</div> */}
 
 				<div className="relative w-full h-[250px] sm:max-w-[350px] sm:h-[350px] mt-10 sm:mt-20 mx-auto">
 					<Image src="/padlock.svg" fill alt="" className="object-contain" />

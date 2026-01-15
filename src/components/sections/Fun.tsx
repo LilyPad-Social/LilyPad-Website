@@ -11,9 +11,12 @@ const Fun = () => {
 				<p className="font-bold text-4xl sm:text-5xl lg:text-6xl text-center mx-auto w-fit max-w-4xl lg:leading-15 -tracking-[2px] mt-2">
 					Hop into one LilyPad at a time and have lots of Fun{" "}
 				</p>
-
-				<div className="relative w-[200px] h-[200px] mx-auto mt-14 hidden sm:flex">
-					<Image src="/barcode.svg" alt="" className="object-contain" fill />
+				<div className="bg-[rgba(255,255,255,0.2)] p-2 rounded-3xl w-fit  mt-14 mx-auto">
+					<div className="bg-white rounded-2xl p-2 w-fit mx-auto">
+						<div className="relative w-[200px] h-[200px] mx-auto hidden sm:flex">
+							<Image src="/barcode.svg" alt="" className="object-contain" fill />
+						</div>
+					</div>
 				</div>
 				<div className="flex flex-col sm:hidden gap-3 mx-auto w-fit mt-10">
 					{[

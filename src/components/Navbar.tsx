@@ -62,9 +62,16 @@ const Navbar = () => {
 							</div>
 							<div className="flex flex-col gap-8 mt-12">
 								{[
-									{ name: "Blog", link: "/" },
-									{ name: "Event", link: "/" },
-									{ name: "Community Guidelines", link: "/" },
+									{
+										name: "LilyPad Commons",
+										link:
+											"https://benagos.notion.site/LilyPad-Commons-1bf3c9f91dc78036a643f9967832f96f?source=copy_link",
+									},
+									{
+										name: "Community Guidelines",
+										link:
+											"https://benagos.notion.site/LilyPad-Community-Guidelines-TOS-1bf3c9f91dc7818b8d06c3a0ef906384?source=copy_link",
+									},
 								]?.map((n: any, index: number) => (
 									<Link href={n?.link} key={index} onClick={() => setMenuOpen(!menuOpen)}>
 										<p className="text-white text-end text-xl hover:text-brandGreen transition-all ease-in-out duration-300">
@@ -73,7 +80,10 @@ const Navbar = () => {
 									</Link>
 								))}
 							</div>
-							<div className="flex items-center gap-[13px] bg-white rounded-full overflow-hidden h-auto px-5 cursor-pointer w-fit ml-auto py-3 mt-6">
+							<Link
+								href="https://onelink.to/cvj3p3"
+								className="flex items-center gap-[13px] bg-white rounded-full overflow-hidden h-auto px-5 cursor-pointer w-fit ml-auto py-3 mt-6"
+							>
 								<div className="relative w-[22px] h-[22px]">
 									<Image src="/appstore.png" fill alt="" style={{ objectFit: "contain" }} />
 								</div>
@@ -81,7 +91,7 @@ const Navbar = () => {
 									<Image src="/play.svg" fill alt="" style={{ objectFit: "contain" }} />
 								</div>
 								<p className="text-base font-medium text-black">Download App</p>
-							</div>
+							</Link>
 						</div>
 					</motion.div>
 				)}
@@ -101,11 +111,18 @@ const Navbar = () => {
 
 						<div className="lg:flex items-center gap-8 hidden">
 							{[
-								{ name: "LilyPad Commons", link: "/" },
-								// { name: "Event", link: "/" },
-								{ name: "Community Guidelines", link: "/" },
+								{
+									name: "LilyPad Commons",
+									link:
+										"https://benagos.notion.site/LilyPad-Commons-1bf3c9f91dc78036a643f9967832f96f?source=copy_link",
+								},
+								{
+									name: "Community Guidelines",
+									link:
+										"https://benagos.notion.site/LilyPad-Community-Guidelines-TOS-1bf3c9f91dc7818b8d06c3a0ef906384?source=copy_link",
+								},
 							]?.map((n: any, index: number) => (
-								<Link href={n?.link} key={index}>
+								<Link href={n?.link} key={index} target="_blank">
 									<p className="text-white text-[16px] hover:text-brandGreen transition-all ease-in-out duration-300">
 										{n?.name}
 									</p>
@@ -142,7 +159,10 @@ const Navbar = () => {
 							</SelectContent>
 						</Select> */}
 
-						<div className="flex items-center gap-[13px] bg-white rounded-full overflow-hidden h-auto px-5 cursor-pointer py-3">
+						<Link
+							href="https://onelink.to/cvj3p3"
+							className="flex items-center gap-[13px] bg-white rounded-full overflow-hidden h-auto px-5 cursor-pointer py-3"
+						>
 							<div className="relative w-[20px] h-[20px]">
 								<Image src="/appstore.png" fill alt="" style={{ objectFit: "contain" }} />
 							</div>
@@ -150,7 +170,7 @@ const Navbar = () => {
 								<Image src="/play.svg" fill alt="" style={{ objectFit: "contain" }} />
 							</div>
 							<p className="text-base font-medium text-black">Download App</p>
-						</div>
+						</Link>
 					</div>
 
 					<div
