@@ -73,7 +73,13 @@ const Footer = () => {
 								name: "Contact",
 								items: [
 									{
-										name: "Benagos Technologies Limited Lagos, Nigeria",
+										name: (
+											<p>
+												Benagos Technologies Limited
+												<br />
+												Lagos, Nigeria
+											</p>
+										),
 									},
 									{
 										name: "lilypad@benagos.com",
@@ -94,7 +100,7 @@ const Footer = () => {
 												m.link ? "text-brandGreen" : "text-white"
 											} transition-all ease-in-out duration-300`}
 										>
-											<p className="max-w-xs -tracking-[0.2px]">{m?.name}</p>
+											<div className="max-w-xs -tracking-[0.2px]">{m?.name}</div>
 										</Link>
 									))}
 								</div>
@@ -143,7 +149,7 @@ const Footer = () => {
 									"https://benagos.notion.site/LilyPad-Privacy-1bf3c9f91dc78151981cc9fa97db4c2c?source=copy_link",
 							},
 							{
-								name: "Contact LilyPad",
+								name: "Cookie Policy",
 								link:
 									"https://benagos.notion.site/LilyPad-Cookie-policy-2e73c9f91dc7806cb709c78d0f487882?source=copy_link",
 							},
