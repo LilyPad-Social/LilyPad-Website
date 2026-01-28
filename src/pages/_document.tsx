@@ -24,7 +24,7 @@ export default function Document() {
 				<meta property="og:url" content="https://lilypad.benagos.com/" />
 				<meta property="og:author" name="Afolabi Babatunde Joseph" />
 				<meta property="og:author" name="Ehizojie Ihayere" />
-				<meta property="og:image" content="https://i.ibb.co/XfYVNybF/Lily-Pad.png" />
+				<meta property="og:image" content="https://i.ibb.co/XfYVNybF/Lily-Pad.png?v=2" />
 
 				{/* Twitter Cards */}
 				<meta name="twitter:card" content="summary_large_image" />
@@ -34,7 +34,7 @@ export default function Document() {
 					content="	LilyPad is an application for Android and iOS mobile phone to meet and connect with strangers
 					anonymously. LilyPad is where conversations spark, and connections happen. "
 				/>
-				<meta name="twitter:image" content="https://i.ibb.co/XfYVNybF/Lily-Pad.png" />
+				<meta name="twitter:image" content="https://i.ibb.co/XfYVNybF/Lily-Pad.png?v=2" />
 			</Head>
 			<body className="antialiased">
 				<Main />
