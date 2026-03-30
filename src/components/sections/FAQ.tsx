@@ -36,7 +36,7 @@ const FAQ = () => {
 				<p>
 					Yes, you will need to.{" "}
 					<span className="text-brandGreen">
-						<Link href="/">Download</Link>
+						<Link href="https://onelink.to/cvj3p3">Download</Link>
 					</span>{" "}
 					the app to get started.
 				</p>
@@ -45,7 +45,7 @@ const FAQ = () => {
 		{
 			name: "Is there an age restriction for using LilyPad?",
 			note:
-				"Yes. LilyPad is intended for users 16 years and older. This helps ensure mature, respectful conversations across the platform.",
+				"Yes. LilyPad is intended for users 18 years and older. This helps ensure mature, respectful conversations across the platform.",
 		},
 		{
 			name: "Is LilyPad Free to Use?",

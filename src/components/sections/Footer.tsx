@@ -21,11 +21,11 @@ const Footer = () => {
 								items: [
 									{
 										name: "iPhone",
-										link: "/",
+										link: "https://apps.apple.com/ng/app/lilypad/id6753817472",
 									},
 									{
 										name: "Android",
-										link: "/",
+										link: "https://play.google.com/store/apps/details?id=com.product.lilypad&hl=en&pli=1",
 									},
 								],
 							},
@@ -44,7 +44,7 @@ const Footer = () => {
 									},
 									{
 										name: "Email Us",
-										link: "/",
+										email: "lilypad@benagos.com",
 									},
 								],
 							},
@@ -53,15 +53,15 @@ const Footer = () => {
 								items: [
 									{
 										name: "Linkedin",
-										link: "https://linkedin.com/company/benagos",
+										link: "https://www.linkedin.com/showcase/lilypadsocial",
 									},
 									{
 										name: "Instagram",
-										link: "https://instagram.com/benagoshq",
+										link: "https://instagram.com/lilypad_app",
 									},
 									{
 										name: "X(Twitter)",
-										link: " https://x.com/benagoshq",
+										link: "https://x.com/lilypad_app",
 									},
 									{
 										name: "TikTok",
@@ -93,11 +93,11 @@ const Footer = () => {
 								<div className="font-light text-[13px] text-white flex flex-col gap-3 sm:gap-4 mt-4">
 									{f?.items?.map((m: any, index: number) => (
 										<Link
-											href={m?.link ?? "#"}
+											href={m?.email ? `mailto:${m?.email}` : (m?.link ?? "#")}
 											target="_blank"
 											key={index}
-											className={`${m?.link ? "cursor-pointer" : "cursor-auto"} hover:${
-												m.link ? "text-brandGreen" : "text-white"
+											className={`${m?.link || m?.email ? "cursor-pointer" : "cursor-auto"} hover:${
+												m.link || m?.email ? "text-brandGreen" : "text-white"
 											} transition-all ease-in-out duration-300`}
 										>
 											<div className="max-w-xs -tracking-[0.2px]">{m?.name}</div>
