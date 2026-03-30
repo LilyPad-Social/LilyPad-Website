@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 const Hero = () => {
 	const container: any = {
 		hidden: {},
@@ -55,18 +56,25 @@ const Hero = () => {
 								variants={item}
 							>
 								{[
-									{ name: "Download for iPhone", icon: "/appstore.png" },
-									{ name: "Download for Android", icon: "/play.svg" },
+									{
+										name: "Download for iPhone",
+										icon: "/appstore.png",
+										link: "https://apps.apple.com/ng/app/lilypad/id6753817472",
+									},
+									{
+										name: "Download for Android",
+										icon: "/play.svg",
+										link: "https://play.google.com/store/apps/details?id=com.product.lilypad&hl=en&pli=1",
+									},
 								]?.map((m: any, index: number) => (
-									<motion.div
-										key={index}
-										className="bg-white rounded-full px-5 py-4 flex items-center w-full gap-3 cursor-pointer justify-center"
-									>
-										<div className="w-[23px] h-[22px] relative">
-											<Image src={m?.icon} fill alt="" className="object-contain" />
-										</div>
-										<p className="text-black text-[16px] font-semibold">{m?.name}</p>
-									</motion.div>
+									<Link href={m?.link} key={index}>
+										<motion.div className="bg-white rounded-full px-5 py-4 flex items-center w-full gap-3 cursor-pointer justify-center">
+											<div className="w-[23px] h-[22px] relative">
+												<Image src={m?.icon} fill alt="" className="object-contain" />
+											</div>
+											<p className="text-black text-[16px] font-semibold">{m?.name}</p>
+										</motion.div>
+									</Link>
 								))}
 							</motion.div>
 						</motion.div>

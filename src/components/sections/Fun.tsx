@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import Image from "next/image";
+import Link from "next/link";
 const Fun = () => {
 	return (
 		<div className="min-h-[100vh] w-full relative">
@@ -20,18 +21,25 @@ const Fun = () => {
 				</div>
 				<div className="flex flex-col sm:hidden gap-3 mx-auto w-fit mt-10">
 					{[
-						{ name: "Download for iPhone", icon: "/appstore.png" },
-						{ name: "Download for Android", icon: "/play.svg" },
+						{
+							name: "Download for iPhone",
+							icon: "/appstore.png",
+							link: "https://apps.apple.com/ng/app/lilypad/id6753817472",
+						},
+						{
+							name: "Download for Android",
+							icon: "/play.svg",
+							link: "https://play.google.com/store/apps/details?id=com.product.lilypad&hl=en&pli=1",
+						},
 					]?.map((m: any, index: number) => (
-						<div
-							key={index}
-							className="bg-white rounded-full px-6 py-4 flex items-center w-full gap-3 cursor-pointer"
-						>
-							<div className="w-[23px] h-[22px] relative">
-								<Image src={m?.icon} fill alt="" className="object-contain" />
+						<Link href={m?.link} key={index}>
+							<div className="bg-white rounded-full px-6 py-4 flex items-center w-full gap-3 cursor-pointer">
+								<div className="w-[23px] h-[22px] relative">
+									<Image src={m?.icon} fill alt="" className="object-contain" />
+								</div>
+								<p className="text-black text-[16px] font-semibold">{m?.name}</p>
 							</div>
-							<p className="text-black text-[16px] font-semibold">{m?.name}</p>
-						</div>
+						</Link>
 					))}
 				</div>
 			</div>
