@@ -66,7 +66,9 @@ const FAQ = () => {
 					<p className="text-white text-center font-medium mx-auto -tracking-[0.5px] text-[18px] max-w-3xl mt-1">
 						We have answers to some questions you may have.
 						<br className="hidden sm:block" /> Didn&apos;t find what you’re looking for? Send us a mail at{" "}
-						<span className="text-brandGreen">lilypad@benagos.com</span>
+						<span className="text-brandGreen">
+							<Link href="mailto:lilypad@benagos.com">lilypad@benagos.com</Link>
+						</span>
 					</p>
 				</div>
 				{/* faqs */}
