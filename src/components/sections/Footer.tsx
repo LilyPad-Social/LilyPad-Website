@@ -53,19 +53,15 @@ const Footer = () => {
 								items: [
 									{
 										name: "Linkedin",
-										link: "https://www.linkedin.com/showcase/lilypadsocial",
+										link: "https://linkedin.com/company/benagos",
 									},
 									{
 										name: "Instagram",
-										link: "https://instagram.com/lilypad_app",
+										link: "https://instagram.com/benagoshq",
 									},
 									{
 										name: "X(Twitter)",
-										link: "https://x.com/lilypad_app",
-									},
-									{
-										name: "TikTok",
-										link: "https://www.tiktok.com/@benagoshq",
+										link: "https://x.com/benagoshq",
 									},
 								],
 							},
